@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(15, 15, 15); 
+}
+.container-fluid{
+    height: 100%;
+    background: rgb(15, 15, 15); 
+}
+.main{
+    height: 100%;
+    background: rgb(15, 15, 15); 
+}
+.nav-bar{
+    display: flex;
+    padding-top: 5px ;
+    justify-content: space-around;
+    align-content:space-around;
+    text-decoration: none;
+    margin-bottom:50px;
+}
+.nav-bar button {
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    padding: 2px;
+    background: rgb(0, 140, 255);
+    color: white;   
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.nav-bar button:hover {
+    transform: scale(1.1);
+    background: rgb(0, 140, 255);
+}
+.logo{
+    height:20px;
+    transition: 0.3s;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.informacao{
+    color: rgba(247, 247, 247, 0.884);
+    width: 100%;
+}
+.informacao p{
+    text-align: justify;
+}
+.menu-lateral{
+    background-color: rgb(10, 10, 10);
+    color: rgb(0, 0, 0);
+}
+.menu-lateral a{
+    color: rgb(255, 255, 255);
+}
+.menu-lateral ul li{
+    transition: 0.3s;
+}
+
+.menu-lateral ul li:hover{
+    background-color: rgb(58, 58, 58);
+}
+
+.menu-lateral span{
+    color: white;
+}
+.accordion-button{
+    background-color: rgb(20, 20, 20) !important;
+    color: white !important;
+    border: none !important;
+    box-shadow: none !important;
+}

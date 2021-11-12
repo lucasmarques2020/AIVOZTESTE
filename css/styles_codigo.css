@@ -1,0 +1,79 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: rgb(0, 0, 0);
+}
+.nav-bar{
+    height: 50px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-content:space-around;
+    text-decoration: none;
+}
+.nav-bar button {
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    padding: 2px;
+    background: rgb(0, 140, 255);
+    color: white;   
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.nav-bar button:hover {
+    transform: scale(1.1);
+    background: rgb(0, 140, 255);
+}
+.logo{
+    height:20px;
+    transition: 0.3s;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.fatherAll{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100%;
+}
+.pai{
+    margin: 0px;
+    padding: 0px;
+    height:100%;
+    width: 100%;
+    background-color: black;
+    
+}
+.pai2{
+    height: 100%;
+    width: 100%;
+    
+}
+.filho1::before{
+    background-color: white;
+}
+.filho1 svg{
+    margin-left: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.filho1 svg:hover{
+    transform: scale(1.2);
+}
+.Ifram{
+    background-color: white;
+}
+#resultSpeak{
+    color: white;
+}
+
+
+
+
+
+
+

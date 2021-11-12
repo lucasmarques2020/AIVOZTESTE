@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylesDocuments.css">
+    <link rel="icon" type="image/x-icon" href="assets/logo/LOGOTITLE.svg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>AIVOZ | Documentação</title>
+</head>
+<body>
+    <div class="container-fluid">
+      <div class="nav-bar nav-pills nav-fill">
+        <div class=col-6>
+          <a class="navbar-brand" href="./index.html"><img class="logo" src="assets/logo/AIVOZLOGO.svg"></a>
+        </div>
+        <div>
+          <a class="navbar-brand" href="codigo.html"><button class = "btn btn-primary">Codificar agora</button></a>
+        </div>
+      </div>
+      <div class="main row">
+
+           
+            <div class="col-md-3 menu-lateral d-flex flex-column flex-shrink-0 p-3" >
+                <span class="fs-4">Busca rápida</span>
+              <hr>
+
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item bg-transparent">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button href="#introducao"class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Introdução
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link" aria-current="page">
+                            O que é AIVOZ
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#tecnologias" class="nav-link">
+                            Sobre as Tecnologias
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#limitacoes" class="nav-link">
+                            Limitações
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                      Comandos
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item">
+                          <a href="#html" class="nav-link" aria-current="page">
+                            HTML
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#css" class="nav-link">
+                            CSS
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#layout" class="nav-link">
+                            Layout
+                          </a>
+                        </li>
+                      </ul>
+                      </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+                      Mais informações
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link" aria-current="page">
+                            Disponibilidade
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="nav-link">
+                            Autor
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+               
+              
+              <hr>
+            </div>
+            
+
+         <div class="informacao col">
+            <div class="tab-content col-12" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-into-tab">
+                  <div class="introd">
+                    <h1 id="introducao">Introdução</h1>
+                    <hr>
+                    <br>
+                    <h3>O que é AIVOZ</h3>
+                    <br>
+                    <p class = "">
+                      O AIVOZ é uma aplicação web que propõe praticidade, acessibilidade e eficiência na vida dos desenvolvedores. Ela permite que os usuários possam utilizar a voz para criar estruturas HTML e CSS em linhas de códigos em seus projetos. A aplicação é composta por três elementos principais, sendo eles: Usuário, Sistema e Funções Analisadoras. O Usuário interage com o Sistema através da voz e escrita. O Sistema por sua vez está implementado no framework Bootstrap e está divido em dois componentes: um botão acionador para emissão dos comando por voz e um editor de código-fonte, onde serão mostrados todos os códigos gerados pelos comandos emitidos e editados através do Usuário. As Funções Analisadoras são responsáveis tanto pelo tratamento dos comandos de voz e da edição de texto pelo usuário. A Web Speech API possui uma série de funções que tem como objetivo de treinar, analisar e reconhecer as gramáticas criadas. A partir dessas funções serão gerados os códigos-fonte em HTML e CSS. Por fim, o CodeMirror é responsável por retornar para o usuário de forma textual os códigos-fonte representados pelos comandos ditos pelo usuário e também permitir que o mesmo possa editá-lo</p>
+                  </div>
+                  <div class="" id="sobre">
+                    <br>
+                    <h2 id="tecnologias">Sobre as Tecnologias</h2>
+                    <br>
+                    <h4>BootStrap</h4>
+                    <br>
+                    <p class = "">
+                      O projeto proposto utilizou o Bootstrap como Front-End pela sua facilidade e tecnologias de dominio do criador. O design de website é um dos o principais fatores que devem ser
+                      planejados adequadamente para que o site funcione bem e que possa ser acessado por vários
+                      navegadores, bem como ser executado em várias plataformas.
+                      O Bootstrap é um framework para criar aplicações da web de forma rápida, fácil e
+                      gratuita. Bootstrap consiste da linguagens HTML, CSS e JavaScript para gerar Grids, Layout,
+                      Tipografias, Tabelas, Formulários, Navegação e outros. Com a ajuda do Bootstrap, pode-se criar
+                      sites responsivos com rapidez e facilidade e que podem funcionar perfeitamente em navegadores
+                      populares como Google Chrome, Mozila Firefox, Safari, Opera e Internet Explorer. Atualmente
+                      o Bootstrap se encontra na sua versão estável v5.1.3.
+                    </p>
+                    <br>
+                    <h4>Web Speech API</h4>
+                    <br>
+                    <p>
+                      A Web Speech API foi projetada para análise e síntese de fala. Ele permite que os
+                      usuários enviem entradas de voz para aplicações na web. Em seguida, as aplicações da web
+                      utilizarão a Web Speech API para transformar a fala em texto. Existem dois componentes
+                      principais para esta API, que abrem novas possibilidades interessantes de acessibilidade e
+                      mecanismos de controle:
+                      • O reconhecimento de voz é acessado por meio da interface SpeechRecognition, que fornece
+                      a capacidade de reconhecer o contexto de voz de uma entrada de áudio (normalmente
+                      por meio do serviço de reconhecimento de voz padrão do dispositivo) e responder adequadamente. A interface SpeechGrammar representa um contêiner para um determinado
+                      conjunto de gramáticas que o aplicativo deverá reconhecer. Por exemplo, no AIVOZ as
+                      gramáticas se tratam de palavras-chave que correspondem aos comandos de voz e aos
+                      elementos das linguagens HTML e CSS.
+                      • A síntese de voz é acessada por meio da interface SpeechSynthesis, um componente
+                      que permite que os programas leiam seu conteúdo de texto (normalmente por meio do
+                      sintetizador de voz padrão do dispositivo).
+                    </p>
+                    <br>
+                    <h4>CodeMirror</h4>
+                    <br>
+                    <p>
+                      CodeMirror é um editor de texto versátil implementado em JavaScript para o navegador.
+                      Ele é especializado na edição de código e vem com vários modos de linguagem e complementos
+                      que implementam funcionalidades de edição mais avançadas. O CodeMirror é um projeto
+                      de código aberto compartilhado sob uma licença MIT. É o editor usado nas ferramentas de
+                      desenvolvimento para Firefox, Chrome e Safari, no Light Table, Adobe Brackets, Bitbucket e
+                      muitos outros projetos.
+                    </p>
+                    <br>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API" target="_blank"><button type="button"class="btn btn-primary"> WEB SPEECH API</button></a>
+                    <a href="https://www.google.com/intl/pt/chrome/demos/speech.html" target="_blank"><button style="color: white;"type="button"class="btn btn-warning">Web Speech API Demonstration</button></a>
+                    <a href="https://codemirror.net/" target="_blank"><button type="button"class="btn btn-success">CodeMirror</button></a>
+                    <a href="https://getbootstrap.com/" target="_blank"><button style="background-color: #6f42c1; color: white;" type="button"class="btn">BootStrap</button></a>
+                    <br>
+                    <br>
+                    <h2 id="limitacoes">Limitações</h2>
+                    <br>
+                    <p>A aplicações detém algumas limitações, sendo elas: Tecnologias, Linguaguens, Automatizações, Disponibilidade, entre outras.
+                      Uma outra limitação é mais decorrente ao usuário, pois está ligada diretamente ao dispositivo fonador (microfones) do usuário. 
+                      Vale destacar que é necessário um microfone de qualidade para poder usufruir de toda experiência da plataforma.
+                    </p>
+                    <br>
+                  </div>
+                  <div class="usar" id= "comando">
+
+                    <h1 id="comandos">Comandos</h1>
+                    <hr>
+                    <br>
+                    <p>Antes de demonstrar os comandos, é necessário entender o layout do AIVOZ. O AIVOZ, mas especificamente na tela de codificação,
+                      está dividida em duas. Em sua área esquerda, como mostrado na figura, encontra-se o editor onde o usuário poderá interagir por voz ou mouse e teclado.
+                      Nela também encontra-se quatro botões importantes. O primeiro é botão "play" onde ele executará o código ou atualizando o mesmo. O segundo, logo em seguida, é o de
+                      download, onde o usuário poderá baixar o seu código em sua máquina já que o AIVOZ ainda não conta com um sistema de nuvem. O teceiro é o botão de fala, onde o usuário poderá interagir com o AIVOZ, assim, adicionando códigos por comandos de voz.
+                      O quarto e último. logo abaixo, é o botão que será armazenados todos os comandos emitidos pelo usuário. Nele o usuário poderá visualizar os comandos falados anteriormente para fins de reforço.
+                    </p>
+                    <br>
+                    <img class="img-fluid" style="width: 900px;"src="./assets/doc/TELAINICIAL.PNG" alt="Tela Inicial">
+                    <br>
+                    <br>
+                    <p>Na sua área direita, encontra-se a demonstração web resultante aos códigos executados pelo desenvolvedor. Nela o desenvolvedor será capaz de 
+                      visualizar em tempo real os resultados obtivos pelos códigos falados ou digitados. Caso o usuário esqueça quaisquer comandos, basta ir no botão logo acima do visualizador
+                      e clicar, então ele entrará na parte da documentação.
+                    </p>
+                    <h2 id="html">HTML</h2>
+                    <br>
+                    <p class = "">
+                      Como já dito, o AIVOZ utiliza a Linguagem PT-BR como gramática para acionar as
+                      funções. Entretando, a linguagem adotada dispõe de alguns problemas que podem atrapalhar no
+                      momento da captura da voz, como por exemplo vícios de linguagens, regionalismo, microfone
+                      com baixo desempenho, comandos extensos, homônimos, etc. Para evitar esses tipos de problemas, foram testadas e treinadas previamente dentro do Web Speech API, que tipos de palavras
+                      poderiam ser adicionadas nos comandos que não levem aos problemas citados acima.
+                      Por exemplo, ao emitir o comando “criar div” o Web Speech API interpreta de duas
+                      maneiras, uma sendo “criar divi” e “criar div”. De qualquer maneira o código é feito
+                      para tratar esses casos especificos. Logo, todos os comandos criados foram pesandos de modo
+                      que não gerem o menor tipo de inconsistência/interpretações possíveis. Toda a gramática do
+                      AIVOZ está disponibilizada na documentação da plataforma, onde alerta ao usuário de todos os
+                      possiveis problemas que podem sofrer durante a execução.
+                      Além das tags, também existe o tratamento para criar um atributo a uma tag. Para
+                      acionar o atributo, o usuário deve falar “com” e logo em seguida especificar qual tipo de atributo
+                      vai ser destinado aquela tag. Por exemplo, é possível criar uma tag div com atraibuto de
+                      classe através do comando falado “criar div com classe”.
+                    </p>
+                    <br>
+                    <p>Para executar qualquer comando no AIVOZ, é necessário clicar no botão simbolizado pelo microfone. Após clicar, o botão
+                      ficará na cor vermelha e aparecerá uma frase dizendo: "Estou ouvindo".
+                    </p>
+                    <br>
+                    <div class="Autor" id="autor">
+                      <h2>Autor</h2>
+                      <p class = "">
+                        Olá, tudo bem? Meu nome é Lucas Marques Bandeira. Tenho 23 anos e estudo Ciência da Computação no IFCE - Instituto Federal de Educação, Ciência e 
+                        Tecnologia do Ceará / Campus Aracati / Ce. Trabalho na área de Design Gráfico há 4 anos. Minha especialidade
+                        é inkscape e gimp. Também trabalho com desenvolvimento web no front-end. Desenvolvo aplicações web 
+                        utilizando HTML, CSS, JS e o Bootstrap e Vue.js. Com o foco no front-end, crio muitos layouts lindos e 
+                        interativos. Caso tenh interesse neste trabalho e em outros, acesse meu <a href="https://github.com/lucasmarques2020">github <ion-icon name="logo-github"></ion-icon>.</a> 
+                      </p>
+                    </div>
+                  </div>
+                  
+
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">2</div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+              </div>
+           
+      </div>
+    </div>
+    <script>
+      
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
