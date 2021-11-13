@@ -38,25 +38,28 @@
 
 </head>
 
-<body onload="run()">
-    <div class="fatherAll animate__animated animate__fadeInDown">
-        <!--MENU INICIO-->
-        <div class="nav-bar nav-pills nav-fill">
-            <div class=col-6>
-                <a class="navbar-brand" href="index.html"><img class="logo" src="assets/logo/AIVOZLOGO.svg"></a>
-            </div>
-            <div>
-                <a class="navbar-brand" href="document.html"><button class = "btn btn-primary">Documentação</button></a>
-            </div>
+<body class= "animate__animated animate__fadeInDown"onload="run()">
+    <!--MENU INICIO-->
+    <div class="nav-bar nav-pills nav-fill">
+        <div class=col-6>
+            <a class="navbar-brand" href="index.html"><img class="logo" src="assets/logo/AIVOZLOGO.svg"></a>
+        </div >
+        <div>
+            <a class="navbar-brand" href="document.html"><button class = "btn btn-primary">Documentação</button></a>
         </div>
-          <!--MENU FINAL-->
-            <div class="pai">
-                
-                <div class="pai2 row">
-                    <div class = "filho1 col"id="codeeditor">
-                        <div style="background-color:rgb(22, 22, 22); color: white; padding-left: 10px; height: 40px; display: flex; justify-content: center; align-items: center;">
+    </div>
+     <!--MENU FINAL-->
+
+    <div class="container-fluid" id="ContainerAll">
+        <div class="row vh-100 d-flex m-0">
+            <div class="col-md-6 vh-100 flex-grow-1 m-0 order-1 position-relative" id="rowPrincipal">
+                <div class = "h-75 w-100 m-0 position-relative"id="codeeditor">
+                    <div class="row">
+                        <div class = "col-6"style="background-color:rgb(22, 22, 22); color: white; margin:0; height: 40px; display: flex; justify-content: space-around; align-items: center;">
                             index
-                            <svg onclick="run();" style="margin-left: 500px;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        </div>
+                        <div class = "col-6"style="background-color:rgb(22, 22, 22); color: white; margin:0; height: 40px; display: flex; justify-content: space-around; align-items: center;">
+                            <svg onclick="run();" style="" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                                 width="20" height="20"
                                 viewBox="0 0 172 172"
                                 style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,17.2c-37.9948,0 -68.8,30.8052 -68.8,68.8c0,37.9948 30.8052,68.8 68.8,68.8c37.9948,0 68.8,-30.8052 68.8,-68.8c0,-37.9948 -30.8052,-68.8 -68.8,-68.8zM116.4096,88.3048l-43.6192,25.1808c-2.19587,1.26707 -3.9904,0.22933 -3.9904,-2.3048v-50.36733c0,-2.53413 1.79453,-3.57187 3.9904,-2.3048l43.6192,25.1808c2.19587,1.2728 2.19587,3.34827 0,4.61533z"></path></g></g></svg>
@@ -69,23 +72,30 @@
                                 viewBox="0 0 172 172"
                                 style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g id="AltCor" fill="#ffffff"><path d="M86,14.33333c-11.87517,0 -21.5,9.62483 -21.5,21.5v43c0,11.87517 9.62483,21.5 21.5,21.5c11.87517,0 21.5,-9.62483 21.5,-21.5v-43c0,-11.87517 -9.62483,-21.5 -21.5,-21.5zM43.62988,78.83333c-4.343,0 -7.841,3.85365 -7.13867,8.14649c3.5108,21.49797 20.70692,38.35796 42.34212,41.46028v14.89323c0,3.956 3.21067,7.16667 7.16667,7.16667c3.956,0 7.16667,-3.21067 7.16667,-7.16667v-14.89323c21.63521,-3.10233 38.83133,-19.96231 42.34212,-41.46028c0.70233,-4.29283 -2.79567,-8.14649 -7.13867,-8.14649c-3.54033,0 -6.45985,2.60553 -7.05469,6.10286c-2.9025,16.87751 -17.60659,29.73047 -35.31543,29.73047c-17.70883,0 -32.41293,-12.85297 -35.31543,-29.73047c-0.59483,-3.49733 -3.50719,-6.10286 -7.05469,-6.10286z"></path></g></g></svg>  
                         </div>
-                            <div class="accordion">
+                    </div>
+                        <div class="row">
+                            <div class="accordion col">
                                 <div class="accordion-item bg-secondary">
-                                  <h2 class="accordion-header bg-dark" id="flush-headingOne">
+                                    <h2 class="accordion-header bg-dark" id="flush-headingOne">
                                     <button class="accordion-button bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                       <label id="resultSpeak">Comandos falados</label>
+                                        <label id="resultSpeak">Comandos falados</label>
                                     </button>
-                                  </h2>
-                                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body"><ul id="resultSpeak2"></ul></div>
-                                  </div>
+                                    </div>
                                 </div>
                             </div>
-                    </div>
-                     <iframe class="Ifram col" id="windows-out"></iframe>
-                </div>     
-            </div> 
+                        </div>  
+                </div>
+            </div>
+       
+            <div class="col-md-6 h-100 flex-grow-1 order-2">
+                 <iframe class="h-100 w-100" id="windows-out"></iframe>    
+            </div>
+            
         </div>
+    </div>     
     <script>
         //valores CodeMirror
         const editor = CodeMirror(document.getElementById("codeeditor"), {
