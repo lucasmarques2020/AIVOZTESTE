@@ -28,6 +28,14 @@ function recur(resultSpeak,flag) {
                 r = '\twidth:'  + r +';\n';
             }else if (Vetor[i] == 'altura' || Vetor[i] == 'Altura') {
                 r = '\theight:'  + r +';\n';
+            }else if (Vetor[i] == 'sombra' || Vetor[i] == 'Sombra') {
+                r = '\tbox-shadow:'  + r +';\n';
+            }else if (Vetor[i] == 'borda' || Vetor[i] == 'Borda') {
+                r = '\tborder:'  + r +';\n';
+            }else if (Vetor[i] == 'decoração' || Vetor[i] == 'Decoração') {
+                r = '\ttext-decoration:'  + r +';\n';
+            }else if (Vetor[i] == 'fonte' || Vetor[i] == 'font') {
+                r = '\tfont-size:'  + r +';\n';
             }else if (Vetor[i] == 'identificador' || Vetor[i] == 'Identificador') {
                 r = '#' + r;
             }else if (Vetor[i] == 'classe' || Vetor[i] == 'Classe') {
@@ -53,6 +61,9 @@ function recur(resultSpeak,flag) {
         } else if (Vetor[i] == 'quadro') {
             r = '<iframe' + aux + '>\n\t' + r + '\n</iframe>';
             aux = '';
+        } else if (Vetor[i] == 'tabela') {
+            r = '<table' + aux + '>\n\t' + r + '<tr>\n'+ '\t\t<td>\n' + '\t\t</td>\n'+'\t</tr>\n'+'\n</table>';
+            aux = '';
         } else if (Vetor[i] == 'botão' || Vetor[i] == 'botao') {
             r = '<button' + aux + '>\t' + r + '</button>';
             aux = '';
@@ -77,6 +88,18 @@ function recur(resultSpeak,flag) {
         } else if (Vetor[i] == 'h6'|| Vetor[i] == 'H6') {
             r = '<h6' + aux + '>\n\t' + r + '\n</h6>';
             aux = '';
+        } else if (Vetor[i] == 'contato'|| Vetor[i] == 'Contato') {
+            r = '<address' + aux + '>\n\t' + r + '\n</address>';
+            aux = '';
+        } else if (Vetor[i] == 'menu'|| Vetor[i] == 'Menu') {
+            r = '<nav' + aux + '>\n\t' + r + '\n</nav>';
+            aux = '';
+        } else if (Vetor[i] == 'lista'|| Vetor[i] == 'Lista') {
+            r = '<ul' + aux + '>\n\t' + r + '\n</ul>';
+            aux = '';
+        } else if (Vetor[i] == 'caixa'|| Vetor[i] == 'Caixa') {
+            r = '<textarea' + aux + '>\n\t' + r + '\n</textarea>';
+            aux = '';
         } else if (Vetor[i] == 'imagem') {
             r = '<img' + aux + r + '>';
             aux = '';
@@ -85,6 +108,27 @@ function recur(resultSpeak,flag) {
             aux = '';
         } else if (Vetor[i] == 'frase') {
             r = '<label' + aux + '>\n\t' + r + '\n</label>';
+            aux = '';
+        } else if (Vetor[i] == 'html'|| Vetor[i] == 'HTML') {
+            r = '<html' + aux + '>\n\t' + r + '\n</html>';
+            aux = '';
+        } else if (Vetor[i] == 'corpo'|| Vetor[i] == 'Corpo') {
+            r = '<body' + aux + '>\n\t' + r + '\n</body>';
+            aux = '';
+        } else if (Vetor[i] == 'cabeça'|| Vetor[i] == 'Cabeça') {
+            r = '<head' + aux + '>\n\t' + r + '\n</head>';
+            aux = '';
+        } else if (Vetor[i] == 'metadados'|| Vetor[i] == 'Metadados') {
+            r = '<meta' + aux + '/>\n\t' + r + '\n';
+            aux = '';
+        } else if (Vetor[i] == 'metalink'|| Vetor[i] == 'metalinki') {
+            r = '<link' + aux + '>' + r + '\n';
+            aux = '';
+        } else if (Vetor[i] == 'principal'|| Vetor[i] == 'Principal') {
+            r = '<main' + aux + '>\n\t' + r + '\n</main>';
+            aux = '';
+        } else if (Vetor[i] == 'script'|| Vetor[i] == 'Script') {
+            r = '<script' + aux + '>\n\t' + r + '\n</script>';
             aux = '';
         } else if (Vetor[i] == 'rodapé') {
             r = '<footer' + aux + '>\n\t' + r + '\n</footer>';
@@ -97,6 +141,9 @@ function recur(resultSpeak,flag) {
             aux = '';
         } else if (Vetor[i] == 'vídeo' || Vetor[i] == 'video') {
             r = '<video controls> \n <source'+ aux + '>\t' + r + '\n</ video>';
+            aux = '';
+        } else if (Vetor[i] == 'estilo'|| Vetor[i] == 'Stilo') {
+            r = '<style' + aux + '>\n\t' + r + '\n</style>';
             aux = '';
         } else if (Vetor[i] == 'formulário') {
             r = '<form' + aux + '>\n\t' + r + '\n</form>';
@@ -127,17 +174,37 @@ function recur(resultSpeak,flag) {
         } else if (Vetor[i] == 'tipo') {
             auxAtr[cont] = 'type';
             cont++;
-        } else if (Vetor[i] == 'action') {
+        } else if (Vetor[i] == 'ação') {
             auxAtr[cont] = 'action';
             cont++;
         } else if (Vetor[i] == 'estilo') {
             auxAtr[cont] = 'style';
             cont++;
-        }else if (Vetor[i] == 'texto') {
-            r = resultSpeak.toLowerCase().split(' ');
+        } else if (Vetor[i] == 'linguagem') {
+            auxAtr[cont] = 'lang';
             cont++;
-        }
-        else {
+        } else if (Vetor[i] == 'contente' || Vetor[i] == 'content') {
+            auxAtr[cont] = 'content';
+            cont++;
+        } else if (Vetor[i] == 'nome' || Vetor[i] == 'Nome') {
+            auxAtr[cont] = 'name';
+            cont++;
+        } else if (Vetor[i] == 'charset' || Vetor[i] == 'chá set' || Vetor[i] == 'chá sete' || Vetor[i] == 'char sete' || Vetor[i] == 'char seti') {
+            auxAtr[cont] = 'charset';
+            cont++;
+        } else if (Vetor[i] == 'referência') {
+            auxAtr[cont] = 'href';
+            cont++;
+        } else if (Vetor[i] == 'borda') {
+            auxAtr[cont] = 'border';
+            cont++;
+        } else if (Vetor[i] == 'síncrona') {
+            auxAtr[cont] = 'async';
+            cont++;
+        } else if (Vetor[i] == 'réu' || Vetor[i] == 'reu' || Vetor[i] == 'rel' || Vetor[i] == 'Léo' || Vetor[i] == 'léo') {
+            auxAtr[cont] = 'rel';
+            cont++;
+        } else {
             auxValor[cont] = Vetor[i];
         }
         //comando css
@@ -202,9 +269,6 @@ function recur(resultSpeak,flag) {
                     break;
                 case 'remover seleção':
                     editor.replaceSelection("");
-                    break;
-                case 'criar estilo':
-                    editor.replaceSelection("<style>\n \n \n</style>");
                     break;
                 case 'quebrar linha':
                     editor.replaceSelection("\n");
