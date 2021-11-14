@@ -121,6 +121,9 @@ function recur(resultSpeak,flag) {
         } else if (Vetor[i] == 'metadados'|| Vetor[i] == 'Metadados') {
             r = '<meta' + aux + '/>\n\t' + r + '\n';
             aux = '';
+        } else if (Vetor[i] == 'listando'|| Vetor[i] == 'Listando') {
+            r = '<li' + aux + '>\n\t' + r + '\n</li>';
+            aux = '';
         } else if (Vetor[i] == 'metalink'|| Vetor[i] == 'metalinki') {
             r = '<link' + aux + '>' + r + '\n';
             aux = '';
